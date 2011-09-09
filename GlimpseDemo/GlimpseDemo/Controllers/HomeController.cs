@@ -9,5 +9,9 @@ namespace GlimpseDemo.Controllers
             return View();
         }
 
+        public ActionResult Other()
+        {
+            return View();
+        }
     }
 }

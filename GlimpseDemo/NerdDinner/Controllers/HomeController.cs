@@ -4,16 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace NerdDinner.Controllers {
+namespace NerdDinner.Controllers
+{
 
-		[HandleErrorWithELMAH]
-    public class HomeController : Controller {
-    
-        public ActionResult Index() {
+    [HandleErrorWithELMAH]
+    public class HomeController : Controller
+    {
+
+        public ActionResult Index()
+        {
             return View();
         }
 
-        public ActionResult About() {
+        public ActionResult About()
+        {
             return View();
         }
 
@@ -21,5 +25,10 @@ namespace NerdDinner.Controllers {
         {
             return View();
         }
-   }
+
+        public ActionResult Throw()
+        {
+            throw new Exception("Thrown on purpose");
+        }
+    }
 }
